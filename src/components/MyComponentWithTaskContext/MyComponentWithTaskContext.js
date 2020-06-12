@@ -3,11 +3,11 @@ import { withTaskContext } from '@twilio/flex-ui';
 
 class MyComponentWithTaskContext extends React.Component {
   render() {
-    const { task } = this.props;    
+    const { task } = this.props;
     return (
-      <div style={{ flexDirection: 'row' }}>
-          <p>Task Information:</p>
-          <p>{JSON.stringify(task)}</p>
+      <div>
+        <p>Task Attributes:</p>
+        <p>{task ? JSON.stringify(task.attributes) : 'Waiting for task...'}</p>
       </div>
     );
   }

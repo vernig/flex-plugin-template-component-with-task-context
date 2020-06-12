@@ -12,7 +12,7 @@ export default class ComponentWithTaskContextPlugin extends FlexPlugin {
   init(flex, manager) {
     // This templates adds a component in the CRMContainer
     // that displays information about the task 
-    flex.CRMContainer.Content.replace(<MyComponent key="my-component"/>)
+    flex.CRMContainer.Content.replace(<MyComponentWithTaskContext key="my-component"/>)
 
   }
 }
